@@ -5,5 +5,6 @@ def getstatusoutput(command):
     out = process.communicate()
     return (out)
 
-code= getstatusoutput('ifconfig') # we are sending command -->  ifconfig
+_cmd='ifconfig'
+code= getstatusoutput(_cmd) # we are sending command -->  ifconfig
 print (code[0])
